@@ -1,0 +1,90 @@
+.modal-container {
+    width: 100%;
+    max-width: 70rem;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2.5rem 3rem;
+    position: fixed;
+    bottom: 1.8rem;
+    animation: slideY 1s;
+    left: 50%;
+    margin-left: -35rem;
+}
+
+.modal-top {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #161616;
+}
+
+.btn-close svg {
+    stroke: #172742;
+}
+
+.full-link {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #A7A7A7;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.short-link-box {
+    background: #172742;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.7rem;
+    height: 5rem;
+    transition: color .3s;
+    position: relative;
+}
+
+.short-link-box:hover {
+    color: aquamarine;
+}
+
+.short-link-box svg {
+    transition: stroke .3s;
+}
+
+.short-link-box:hover svg {
+    stroke: aquamarine;
+}
+
+.copy-text {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    background: #03951E;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.copy-text p {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .modal-container {
+        max-width: 90%;
+        overflow: hidden;
+        margin-left: -45%;
+    }
+
+    .full-link {
+        font-size: 1.4rem;
+        max-width: 22.8rem;
+        word-break: break-all;
+    }
+}
